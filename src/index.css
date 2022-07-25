@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: poppins,Sans-serif;
+  overflow-x: hidden;
+}
+
+.home{
+  background: linear-gradient(135deg, #9E13B2 0%, #540964 46.27%, #030B25 100%);
+}
+
+/* -----header----- */
+
+.header-overlay{
+  opacity: .8;
+  transition: background .3s,border-radius .3s,opacity .3s;
+  background-color: linear-gradient(180deg,#3F056D 100%,#091931 86%);
+}
+
+.BGMI-Tag{
+    font-size: 120px;
+}
+
+.header-background{
+  background-image: url('../src/images/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Header{
+  background-image: url('./images/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-overlay{
+  background-color: transparent;
+  background-image: linear-gradient(180deg,#3F056D 100%,#091931 86%);
+  opacity: .8;
+    transition: background .3s,border-radius .3s,opacity .3s;
+}
+
+/* ------GAmernation------ */
+.right-circle{
+  background-image: url('./images/right-circle.png');
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+/* ----Accordion----- */
+._Accordion{
+  border: 1px solid purple; 
+}
+
+/* -----Winner----- */
+.winner{
+  background-image: url('./images/middle-circle.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 30%;
+}
+
+/* -----TUTORIAL----- */
+.tutorial{
+  background-image: url('../src/images/tutorial.png');
+}
+
+.overlay{
+  background-color: #000000B3;
+  opacity: 0.89;
+}
+
+/* ------Login------- */
+
+.Input_form{
+  background: transparent; 
+  background-color: transparent;
+  border: 1px solid #ffffff99;
+}
+
+.Input_form::placeholder{
+    background-color: transparent;
+    color: #ffffff99;
+    font-size: 16px;
+}
+
+.login_btn {
+  background: linear-gradient( 135deg, #2740D5 0%, #BC1681 100%);
+}
+

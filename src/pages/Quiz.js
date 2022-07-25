@@ -1,0 +1,115 @@
+import React from "react";
+import Game1 from "../images/game1.jpg";
+import Game2 from "../images/game2.jpg";
+import Game3 from "../images/game3.jpg";
+import Game4 from "../images/game4.jpg";
+import Game5 from "../images/game5.jpg";
+import Game6 from "../images/game6.jpg";
+import Game7 from "../images/game7.jpg";
+import Game8 from "../images/game8.jpg";
+import Banner from "../images/quiz-banner.jpg";
+import "../index.css";
+import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
+
+
+const Quiz = () => {
+  return (
+    <div className="bg-quizbg">
+    <Helmet>
+      <title>Quiz-Gamernation</title>
+      <meta name="description"
+        content="Here you can give feedback to yourself"
+      />
+    </Helmet>
+      <div className="bg-auto bg-no-repeat bg-center">
+        <img src={Banner} alt="quiz-banner" className="relative xxs:h-24" />
+        <h5 className="absolute top-8 left-2 text-dullwhite text-lg font-light xxs:top-3">
+          <Link to="/">Back</Link>
+        </h5>
+      </div>
+      <div className="px-12 xxs:px-6 xxs:m-auto">
+        <div className="xl:container px-10 mt-16 xl:mx-auto sm:pl-0 xxs:pl-0">
+          <h3 className="text-quizcolor text-2xl underline">
+            Currently Running Quizes
+          </h3>
+        </div>
+        <div className="grid grid-cols-3 gap-3 space-y-4 xl:container xl:mx-auto xl:px-8 sm:mx-auto sm:px-28 xs:px-5 xs:mx-auto py-12 sm:grid-cols-1 
+        sm:gap-12 xs:grid-cols-1 xxs:grid-cols-1">
+          <img
+            src={Game1}
+            alt="game1"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto 
+            md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game2}
+            alt="game2"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto 
+            md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game3}
+            alt="game3"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game4}
+            alt="game4"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game5}
+            alt="game5"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game6}
+            alt="game6"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game7}
+            alt="game7"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game8}
+            alt="game8"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game8}
+            alt="game8"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+        </div>
+      </div>
+      <div className="px-12 xxs:px-6 xxs:m-auto">
+        <div className="xl:container px-10 mt-16 xl:mx-auto  sm:pl-0 xs:px-0 xxs:pl-0">
+          <h3 className="text-quizcolor text-2xl">Upcoming Quizes</h3>
+        </div>
+        <div className="grid grid-cols-3 gap-3 space-y-4 xl:container xl:mx-auto xl:px-8 py-12 sm:grid-cols-1 
+        sm:gap-12 xs:grid-cols-1 xxs:grid-cols-1 sm:px-28 xs:px-8">
+          <img
+            src={Game1}
+            alt="game1"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game2}
+            alt="game2"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+          <img
+            src={Game3}
+            alt="game3"
+            className="transform transition duration-500 hover:scale-105 h-[350px] lg:h-auto md:h-auto sm:h-auto xxs:h-auto"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Quiz;
